@@ -4,8 +4,6 @@ import { headContainerAnimation, headContentAnimation, headTextAnimation, slideA
 import state from '../store';
 import CustomButton from '../components/CustomButton';
 
-
-
 const Home = () => {
   const snap = useSnapshot(state);
 
@@ -16,7 +14,7 @@ const Home = () => {
           <motion.header {...slideAnimation("down")}>
             <img
               src="./threejs.png"
-              alt="threejs"
+              alt="logo"
               className="w-8 h-8 object-contain"
             />
           </motion.header>
@@ -49,6 +47,6 @@ const Home = () => {
       )}
     </AnimatePresence>
   );
-}
+};
 
 export default Home
